@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["env", {
+      "debug": true,
+      "targets": {
+        "browsers": "last 4 version, > 1%, not ie <= 8"
+      }
+    }],
+    "react"
+  ]
+}
