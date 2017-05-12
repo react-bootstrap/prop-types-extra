@@ -1,5 +1,5 @@
 import keyOf from '../src/keyOf';
-import { isChainableAndUndefinedOK } from './helpers.js';
+import { isChainableAndNullOK } from './helpers.js';
 
 describe('keyOf', () => {
   const obj = { foo: 1 };
@@ -7,7 +7,7 @@ describe('keyOf', () => {
     return keyOf(obj)({ p: prop }, 'p', 'Component');
   }
 
-  isChainableAndUndefinedOK(keyOf(obj));
+  isChainableAndNullOK(keyOf(obj));
 
   it('Should return error with non-key values', () => {
     const err = validate('bar');

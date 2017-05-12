@@ -13,7 +13,6 @@
     "lint": "eslint .",
     "test": "npm run lint && jest",
     "tdd": "jest --watch",
-    "coverage": "COVERAGE=true jest",
     "release": "release"
   },
   "repository": {
@@ -44,7 +43,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
     "babel-jest": "^20.0.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
     "chai": "^3.0.0",
@@ -63,7 +64,6 @@
     "sinon-chai": "^2.10.0"
   },
   "dependencies": {
-    "babel-eslint": "^7.2.3",
     "warning": "^2.0.0"
   }
 }

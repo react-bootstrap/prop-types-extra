@@ -1,14 +1,14 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import ReactTestUtils from 'react/lib/ReactTestUtils';
 import mountable from '../src/mountable';
-import { isChainableAndUndefinedOK } from './helpers.js';
+import { isChainableAndNullOK } from './helpers.js';
 
 describe('mountable', () => {
   function validate(prop) {
     return mountable({ p: prop }, 'p', 'Component');
   }
 
-  isChainableAndUndefinedOK(mountable);
+  isChainableAndNullOK(mountable);
 
   it('Should return error with non mountable values', () => {
     const err = validate({});

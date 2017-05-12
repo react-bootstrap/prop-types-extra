@@ -1,4 +1,4 @@
-export function isChainableAndUndefinedOK(validatorUnderTest) {
+export function isChainableAndNullOK(validatorUnderTest) {
   it('Should validate OK with undefined or null values', () => {
     assert.isNull(validatorUnderTest({}, 'p', 'Component'));
     assert.isNull(validatorUnderTest({ p: null }, 'p', 'Component'));

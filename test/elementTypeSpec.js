@@ -1,13 +1,13 @@
 import React from 'react';
 import elementType from '../src/elementType';
-import { isChainableAndUndefinedOK } from './helpers.js';
+import { isChainableAndNullOK } from './helpers.js';
 
 describe('elementType', () => {
   function validate(prop) {
     return elementType({ p: prop }, 'p', 'TestComponent');
   }
 
-  isChainableAndUndefinedOK(elementType);
+  isChainableAndNullOK(elementType);
 
   it('Should validate OK with elementType values', () => {
     assert.isNull(validate('span'));
