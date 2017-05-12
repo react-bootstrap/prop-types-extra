@@ -14,20 +14,38 @@ global.assert = chai.assert;
 global.sinon = sinon;
 
 beforeEach(() => {
-  sinon.stub(console, 'warn');
+  /* eslint-disable no-console */
+  sinon.stub(console, 'error').callsFake(msg => {
+    let expected = false;
+
+    console.error.expected.forEach(about => {
+      if (msg.indexOf(about) !== -1) {
+        console.error.warned[about] = true;
+        expected = true;
+      }
+    });
+
+    if (expected) {
+      return;
+    }
+
+    console.error.threw = true;
+    throw new Error(msg);
+  });
+
+  console.error.expected = [];
+  console.error.warned = Object.create(null);
+  console.error.threw = false;
+  /* eslint-enable no-console */
 });
 
 afterEach(() => {
-  if (typeof console.warn.restore === 'function') {
-    assert(!console.warn.called, () =>
-      `${console.warn.getCall(0).args[0]} \nIn '${this.currentTest.fullTitle()}'`
-    );
-    console.warn.restore();
-  }
-});
+  /* eslint-disable no-console */
+  const { expected, warned, threw } = console.error;
+  console.error.restore();
 
-describe('Process environment for tests', () => {
-  it('Should be development for React console warnings', () => {
-    assert.notEqual(process.env.NODE_ENV, 'production');
-  });
+  if (!threw && expected.length) {
+    expect(warned).to.have.keys(expected);
+  }
+  /* eslint-enable no-console */
 });

@@ -21,12 +21,7 @@
   },
   "keywords": [
     "react",
-    "react-proptype",
-    "react-proptypes",
-    "react-prop-type",
-    "react-prop-types",
-    "react-component",
-    "ecosystem-react"
+    "proptypes"
   ],
   "author": "Matthew L Smith <mtscout6@gmail.com>",
   "license": "MIT",
@@ -38,8 +33,11 @@
     "roots": [
       "<rootDir>/test"
     ],
-    "testRegex": "Spec\\.js",
+    "testRegex": "test\\.js",
     "setupTestFrameworkScriptFile": "./test/test-setup.js"
+  },
+  "peerDependencies": {
+    "react": ">=0.14.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -58,12 +56,13 @@
     "eslint-plugin-mocha": "^4.0.0",
     "eslint-plugin-react": "^5.2.2",
     "jest": "^20.0.1",
-    "react": "^0.13.3",
-    "release-script": "^0.5.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.2.1",
+    "release-script": "^1.0.2",
     "sinon": "^2.2.0",
     "sinon-chai": "^2.10.0"
   },
   "dependencies": {
-    "warning": "^2.0.0"
+    "warning": "^3.0.0"
   }
 }
