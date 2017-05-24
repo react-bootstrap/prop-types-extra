@@ -26,7 +26,7 @@ import elementType from 'prop-types-extra/lib/elementType'
 
 ```sh
 $ npm i -S react
-$ npm i -S react-prop-types
+$ npm i -S prop-types-extra
 ```
 
 ### [`all(...validators)`](/src/all.js)
