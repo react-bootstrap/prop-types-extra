@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/react-bootstrap/react-prop-types.git"
+    "url": "git+https://github.com/react-bootstrap/prop-types-extra.git"
   },
   "keywords": [
     "react",
@@ -26,9 +26,9 @@
   "author": "Matthew L Smith <mtscout6@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/react-bootstrap/react-prop-types/issues"
+    "url": "https://github.com/react-bootstrap/prop-types-extra/issues"
   },
-  "homepage": "https://github.com/react-bootstrap/react-prop-types#readme",
+  "homepage": "https://github.com/react-bootstrap/prop-types-extra#readme",
   "jest": {
     "roots": [
       "<rootDir>/test"
