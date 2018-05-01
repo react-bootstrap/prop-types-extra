@@ -1,5 +1,6 @@
 import { expect } from 'chai';
-import React from 'react';
+import PropTypes from 'prop-types';
+
 import sinon from 'sinon';
 
 import deprecated from '../src/deprecated';
@@ -8,7 +9,7 @@ import { getValidationKey, runValidator, shouldWarn } from './helpers';
 
 function validate(value, validationKey) {
   const validatorSpy = sinon.spy(
-    deprecated(React.PropTypes.string, 'error 1')
+    deprecated(PropTypes.string, 'error 1')
   );
   runValidator(validatorSpy, value, validationKey);
 

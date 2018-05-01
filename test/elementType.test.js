@@ -32,4 +32,8 @@ describe('elementType', () => {
   it('should succeed on component tag', () => {
     validate('span');
   });
+
+  it('should succeed on internal types', () => {
+    validate(React.createContext(null));
+  });
 });
