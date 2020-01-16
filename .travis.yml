@@ -1,7 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - "iojs"
+  - node
 services:
   - xvfb
 before_install:
