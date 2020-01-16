@@ -109,7 +109,7 @@ If the `id` prop above is not specified, the validator will fail with:
 
 >The prop \`id\` is required to make \`MyComponent\` accessible for users of assistive technologies such as screen readers.
 
-[build-badge]: https://img.shields.io/travis/react-bootstrap/prop-types-extra/master.svg
+[build-badge]: https://travis-ci.com/react-bootstrap/prop-types-extra.svg?branch=master
 [build]: https://travis-ci.org/react-bootstrap/prop-types-extra
 
 [npm-badge]: https://img.shields.io/npm/v/prop-types-extra.svg
