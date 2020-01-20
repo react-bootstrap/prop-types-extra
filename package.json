@@ -46,7 +46,7 @@
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
-    "chai": "^3.0.0",
+    "chai": "^4.2.0",
     "dirty-chai": "^1.2.2",
     "eslint": "^2.13.1",
     "eslint-config-airbnb": "^9.0.1",
