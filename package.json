@@ -50,7 +50,7 @@
     "dirty-chai": "^2.0.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^9.0.1",
-    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-mocha": "^6.3.0",
