@@ -57,7 +57,7 @@
     "eslint-plugin-react": "^7.19.0",
     "jest": "^20.0.4",
     "prop-types": "^15.7.2",
-    "react": "^16.13.0",
+    "react": "^16.13.1",
     "release-script": "^1.0.2",
     "sinon": "^9.0.1",
     "sinon-chai": "^3.5.0"
