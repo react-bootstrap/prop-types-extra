@@ -15,10 +15,10 @@ global.sinon = sinon;
 
 beforeEach(() => {
   /* eslint-disable no-console */
-  sinon.stub(console, 'error').callsFake(msg => {
+  sinon.stub(console, 'error').callsFake((msg) => {
     let expected = false;
 
-    console.error.expected.forEach(about => {
+    console.error.expected.forEach((about) => {
       if (msg.indexOf(about) !== -1) {
         console.error.warned[about] = true;
         expected = true;

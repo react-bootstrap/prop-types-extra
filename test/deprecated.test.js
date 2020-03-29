@@ -9,7 +9,7 @@ import { getValidationKey, runValidator, shouldWarn } from './helpers';
 
 function validate(value, validationKey) {
   const validatorSpy = sinon.spy(
-    deprecated(PropTypes.string, 'error 1')
+    deprecated(PropTypes.string, 'error 1'),
   );
   runValidator(validatorSpy, value, validationKey);
 

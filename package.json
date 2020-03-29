@@ -34,28 +34,29 @@
       "<rootDir>/test"
     ],
     "testRegex": "test\\.js",
-    "setupTestFrameworkScriptFile": "./test/test-setup.js"
+    "setupFilesAfterEnv": ["./test/test-setup.js"]
   },
   "peerDependencies": {
-    "react": ">=0.14.0"
+    "react": ">=16.13.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^20.0.3",
-    "babel-plugin-add-module-exports": "^0.3.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "babel-jest": "^25.2.4",
+    "babel-plugin-add-module-exports": "^1.0.2",
     "chai": "^4.2.0",
     "dirty-chai": "^2.0.1",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-config-airbnb-base": "^3.0.1",
-    "eslint-plugin-import": "^2.20.1",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-mocha": "^6.3.0",
     "eslint-plugin-react": "^7.19.0",
-    "jest": "^20.0.4",
+    "jest": "^25.2.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "release-script": "^1.0.2",
@@ -63,7 +64,7 @@
     "sinon-chai": "^3.5.0"
   },
   "dependencies": {
-    "react-is": "^16.3.2",
-    "warning": "^4.0.0"
+    "react-is": "^16.13.1",
+    "warning": "^4.0.3"
   }
 }
