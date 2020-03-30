@@ -1,12 +1,11 @@
 {
   "presets": [
-    ["env", {
-      "debug": true,
+    ["@babel/preset-env", {
       "targets": {
         "browsers": "last 4 version, > 1%, not ie <= 8"
       }
     }],
-    "react"
+    "@babel/preset-react"
   ],
   "plugins": [
     "add-module-exports"

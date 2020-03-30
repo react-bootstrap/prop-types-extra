@@ -4,7 +4,7 @@ export default function all(...validators) {
   function allPropTypes(...args) {
     let error = null;
 
-    validators.forEach(validator => {
+    validators.forEach((validator) => {
       if (error != null) {
         return;
       }

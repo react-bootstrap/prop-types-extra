@@ -9,17 +9,17 @@ function elementType(props, propName, componentName, location, propFullName) {
 
   if (React.isValidElement(propValue)) {
     return new Error(
-      `Invalid ${location} \`${propFullName}\` of type ReactElement ` +
-      `supplied to \`${componentName}\`,expected an element type (a string ` +
-      ', component class, or function component).'
+      `Invalid ${location} \`${propFullName}\` of type ReactElement `
+      + `supplied to \`${componentName}\`,expected an element type (a string `
+      + ', component class, or function component).',
     );
   }
 
   if (!isValidElementType(propValue)) {
     return new Error(
-      `Invalid ${location} \`${propFullName}\` of value \`${propValue}\` ` +
-      `supplied to \`${componentName}\`, expected an element type (a string ` +
-      ', component class, or function component).'
+      `Invalid ${location} \`${propFullName}\` of value \`${propValue}\` `
+      + `supplied to \`${componentName}\`, expected an element type (a string `
+      + ', component class, or function component).',
     );
   }
 

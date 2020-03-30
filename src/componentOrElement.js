@@ -8,21 +8,21 @@ function validate(props, propName, componentName, location, propFullName) {
 
   if (React.isValidElement(propValue)) {
     return new Error(
-      `Invalid ${location} \`${propFullName}\` of type ReactElement ` +
-      `supplied to \`${componentName}\`, expected a ReactComponent or a ` +
-      'DOMElement. You can usually obtain a ReactComponent or DOMElement ' +
-      'from a ReactElement by attaching a ref to it.'
+      `Invalid ${location} \`${propFullName}\` of type ReactElement `
+      + `supplied to \`${componentName}\`, expected a ReactComponent or a `
+      + 'DOMElement. You can usually obtain a ReactComponent or DOMElement '
+      + 'from a ReactElement by attaching a ref to it.',
     );
   }
 
   if (
-    (propType !== 'object' || typeof propValue.render !== 'function') &&
-    propValue.nodeType !== 1
+    (propType !== 'object' || typeof propValue.render !== 'function')
+    && propValue.nodeType !== 1
   ) {
     return new Error(
-      `Invalid ${location} \`${propFullName}\` of value \`${propValue}\` ` +
-      `supplied to \`${componentName}\`, expected a ReactComponent or a ` +
-      'DOMElement.'
+      `Invalid ${location} \`${propFullName}\` of value \`${propValue}\` `
+      + `supplied to \`${componentName}\`, expected a ReactComponent or a `
+      + 'DOMElement.',
     );
   }
 

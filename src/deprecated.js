@@ -13,15 +13,14 @@ export default function deprecated(validator, reason) {
       const messageKey = `${componentName}.${propName}`;
 
       warning(warned[messageKey],
-        `The ${location} \`${propFullNameSafe}\` of ` +
-        `\`${componentNameSafe}\` is deprecated. ${reason}.`
-      );
+        `The ${location} \`${propFullNameSafe}\` of `
+        + `\`${componentNameSafe}\` is deprecated. ${reason}.`);
 
       warned[messageKey] = true;
     }
 
     return validator(
-      props, propName, componentName, location, propFullName, ...args
+      props, propName, componentName, location, propFullName, ...args,
     );
   };
 }

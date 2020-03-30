@@ -31,7 +31,7 @@ describe('all', () => {
     const validatorSpy = validate(validators, 'foo');
     expect(validatorSpy).to.have.been.calledOnce.and.to.have.returned(null);
 
-    validators.forEach(validator => {
+    validators.forEach((validator) => {
       expect(validator).to.have.been.calledOnce();
     });
 

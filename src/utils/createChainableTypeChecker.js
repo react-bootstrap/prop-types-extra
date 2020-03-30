@@ -25,8 +25,8 @@ export default function createChainableTypeChecker(validate) {
     if (props[propName] == null) {
       if (isRequired) {
         return new Error(
-          `Required ${location} \`${propFullNameSafe}\` was not specified ` +
-          `in \`${componentNameSafe}\`.`
+          `Required ${location} \`${propFullNameSafe}\` was not specified `
+          + `in \`${componentNameSafe}\`.`,
         );
       }
 
@@ -39,7 +39,7 @@ export default function createChainableTypeChecker(validate) {
       componentNameSafe,
       location,
       propFullNameSafe,
-      ...args
+      ...args,
     );
   }
 
