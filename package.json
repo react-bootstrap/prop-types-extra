@@ -42,10 +42,10 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^25.2.6",
+    "babel-jest": "^25.3.0",
     "babel-plugin-add-module-exports": "^1.0.2",
     "chai": "^4.2.0",
     "dirty-chai": "^2.0.1",
@@ -56,11 +56,11 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-mocha": "^6.3.0",
     "eslint-plugin-react": "^7.19.0",
-    "jest": "^25.2.7",
+    "jest": "^25.3.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "release-script": "^1.0.2",
-    "sinon": "^9.0.1",
+    "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0"
   },
   "dependencies": {
