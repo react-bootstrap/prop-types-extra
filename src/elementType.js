@@ -3,7 +3,6 @@ import { isValidElementType } from 'react-is';
 
 import createChainableTypeChecker from './utils/createChainableTypeChecker';
 
-
 function elementType(props, propName, componentName, location, propFullName) {
   const propValue = props[propName];
 

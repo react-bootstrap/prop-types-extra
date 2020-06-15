@@ -4,7 +4,6 @@ import deprecated from './deprecated';
 import elementType from './elementType';
 import isRequiredForA11y from './isRequiredForA11y';
 
-
 export {
   all,
   componentOrElement,
