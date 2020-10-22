@@ -19,6 +19,9 @@
     "type": "git",
     "url": "git+https://github.com/react-bootstrap/prop-types-extra.git"
   },
+  "prettier": {
+    "singleQuote": true
+  },
   "keywords": [
     "react",
     "proptypes"
@@ -34,7 +37,9 @@
       "<rootDir>/test"
     ],
     "testRegex": "test\\.js",
-    "setupFilesAfterEnv": ["./test/test-setup.js"]
+    "setupFilesAfterEnv": [
+      "./test/test-setup.js"
+    ]
   },
   "peerDependencies": {
     "react": ">=16.13.1"
