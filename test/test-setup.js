@@ -4,6 +4,7 @@ import chai from 'chai';
 import dirtyChai from 'dirty-chai';
 import sinonChai from 'sinon-chai';
 import sinon from 'sinon';
+import { format } from 'util';
 
 chai.should();
 chai.use(dirtyChai);
@@ -15,8 +16,9 @@ global.sinon = sinon;
 
 beforeEach(() => {
   /* eslint-disable no-console */
-  sinon.stub(console, 'error').callsFake((msg) => {
+  sinon.stub(console, 'error').callsFake((...args) => {
     let expected = false;
+    const msg = format(...args);
 
     console.error.expected.forEach((about) => {
       if (msg.indexOf(about) !== -1) {

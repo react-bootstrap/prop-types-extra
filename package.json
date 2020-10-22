@@ -19,6 +19,9 @@
     "type": "git",
     "url": "git+https://github.com/react-bootstrap/prop-types-extra.git"
   },
+  "prettier": {
+    "singleQuote": true
+  },
   "keywords": [
     "react",
     "proptypes"
@@ -34,7 +37,9 @@
       "<rootDir>/test"
     ],
     "testRegex": "test\\.js",
-    "setupFilesAfterEnv": ["./test/test-setup.js"]
+    "setupFilesAfterEnv": [
+      "./test/test-setup.js"
+    ]
   },
   "peerDependencies": {
     "react": ">=16.13.1"
@@ -58,13 +63,13 @@
     "eslint-plugin-react": "^7.21.4",
     "jest": "^26.5.3",
     "prop-types": "^15.7.2",
-    "react": "^16.14.0",
+    "react": "^17.0.1",
     "release-script": "^1.0.2",
     "sinon": "^9.2.0",
     "sinon-chai": "^3.5.0"
   },
   "dependencies": {
-    "react-is": "^16.13.1",
+    "react-is": "^17.0.1",
     "warning": "^4.0.3"
   }
 }
