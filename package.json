@@ -45,9 +45,9 @@
     "react": ">=16.13.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.7",
+    "@babel/cli": "^7.16.8",
     "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
     "@babel/preset-react": "^7.16.7",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.4.6",
