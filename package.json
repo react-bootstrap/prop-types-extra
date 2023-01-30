@@ -60,7 +60,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-mocha": "^9.0.0",
-    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react": "^7.32.2",
     "jest": "^27.5.1",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
