@@ -1,6 +1,6 @@
 # prop-types-extra [![GitHub Actions][build-badge]][build] [![npm][npm-badge]][npm]
 
-Additional [PropTypes](https://facebook.github.io/react/docs/reusable-components.html#prop-validation) for [React](https://facebook.github.io/react/).
+Additional [PropTypes](https://react.dev/reference/react/Component#static-proptypes) for [React](https://facebook.github.io/react/).
 
 ## Usage
 
