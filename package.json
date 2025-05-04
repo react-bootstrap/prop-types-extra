@@ -63,13 +63,13 @@
     "eslint-plugin-react": "^7.37.5",
     "jest": "^27.5.1",
     "prop-types": "^15.8.1",
-    "react": "^17.0.2",
+    "react": "^19.1.0",
     "release-script": "^1.0.2",
     "sinon": "^11.1.2",
     "sinon-chai": "^3.7.0"
   },
   "dependencies": {
-    "react-is": "^17.0.1",
+    "react-is": "^19.1.0",
     "warning": "^4.0.3"
   }
 }
